@@ -1,0 +1,22 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+
+}
+
+repositories {
+    mavenCentral()
+}
+javafx {
+    version = "19"
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+
+
+mainClassName = 'com.kodilla.tictactoe.TicTacToe'
+
+dependencies {
+    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
